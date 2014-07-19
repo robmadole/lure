@@ -1,6 +1,7 @@
 base:
   '*':
-    - common.locale
     - docker.install
+    - libgit2
     - python
+    - jig
     - lure.environments

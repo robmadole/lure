@@ -1,3 +1,4 @@
 base:
   '*':
     - pythons
+    - jig

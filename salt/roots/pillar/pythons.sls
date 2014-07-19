@@ -1,3 +1,2 @@
 pythons:
-  - python2.6
-  - python2.7
+  - python3.4

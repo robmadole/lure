@@ -7,7 +7,11 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = 'robmadole/jig-development'
 
-  config.vm.synced_folder '.', '/vagrant', type: 'nfs'
+  # Disable the default share
+  config.vm.synced_folder '.', '/vagrant', disabled: true
+  # Use the name of the project
+  config.vm.synced_folder '.', '/lure', type: 'nfs'
+  # Configured for Salt
   config.vm.synced_folder 'salt/roots/', '/srv', type: 'nfs'
 
   config.vm.provision :salt do |salt|
