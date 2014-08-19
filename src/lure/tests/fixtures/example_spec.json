@@ -1,0 +1,10 @@
+{
+  "repository": "http://github.com/robmadole/lure",
+  "plugin": "http://github.com/robmadole/jig-plugins@chucknorris",
+  "versions": {
+    "lang": "python",
+    "using": [
+      "2.7"
+    ]
+  }
+}

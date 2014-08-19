@@ -13,10 +13,11 @@ version = imp.load_source(
 
 install_requires = [
     'pygit2>=0.21.0',
+    'docopt>=0.6.1'
 ]
 
 setup(
-    name='jig',
+    name='lure',
     version=version,
     description="Test Jig plugins with multiple interpreter versions against real code",
     long_description=README + '\n\n' + NEWS,

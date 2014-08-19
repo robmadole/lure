@@ -25,4 +25,12 @@ lure-requirements:
     - group: vagrant
     - bin_env: /envs/{{ python }}
     - requirements: salt://lure/requirements.txt
+
+lure:
+  pip.installed:
+    - user: vagrant
+    - group: vagrant
+    - bin_env: /envs/{{ python }}
+    - editable:
+      - /lure
 {% endfor %}
