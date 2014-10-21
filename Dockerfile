@@ -40,5 +40,8 @@ RUN python-build 3.4.1 /lang/python/3.4.1
 RUN /bin/bash -c 'source /lang/node/nvm.sh && nvm install v0.9.12'
 RUN /bin/bash -c 'source /lang/node/nvm.sh && nvm install v0.10.29'
 RUN /bin/bash -c 'source /lang/node/nvm.sh && nvm install v0.11.13'
+RUN cd /lang/node; rm -rf bin current test
+RUN cd /lang/node; git ls-files | xargs rm -rf 2>/dev/null || exit 0
+RUN cd /lang/node; rm -rf .git
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*

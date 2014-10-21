@@ -26,3 +26,16 @@ lxc-docker:
 
 docker:
   service.running
+
+vagrant:
+  user.present:
+    - groups:
+      - docker
+      - adm
+      - cdrom
+      - sudo
+      - dip
+      - plugdev
+      - vagrant
+      - lpadmin
+      - sambashare

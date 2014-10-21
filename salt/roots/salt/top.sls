@@ -5,3 +5,4 @@ base:
     - python
     - jig
     - lure.environments
+    - lure.containerwithjig

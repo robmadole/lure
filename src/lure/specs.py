@@ -25,7 +25,6 @@ def load_from_file(filename):
     return Spec.from_object(raw_spec)
 
 
-
 class Spec(object):
 
     """
@@ -55,3 +54,6 @@ class Spec(object):
 
     def add_version(self, version):
         self._versions.append(version)
+
+    def __iter__(self):
+        return iter([(self.lang, i) for i in self._versions])

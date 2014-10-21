@@ -7,7 +7,7 @@ def test_spec_not_found():
     exception = SpecNotFound('/file')
 
     assert str(exception) == \
-        'Could not find a Lure spec file /file'
+        "Could not find a Lure spec file '/file'"
 
 
 def test_bad_spec_syntax():

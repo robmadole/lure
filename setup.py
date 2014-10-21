@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import sys
 import os
 import imp
@@ -13,7 +15,9 @@ version = imp.load_source(
 
 install_requires = [
     'pygit2>=0.21.0',
-    'docopt>=0.6.1'
+    'docopt>=0.6.1',
+    'colorlog>=2.3.1',
+    'docker-py==0.4.0'
 ]
 
 setup(

@@ -9,7 +9,7 @@ class SpecNotFound(Exception):
     """
     def __init__(self, spec_filename):
         super().__init__(
-            'Could not find a Lure spec file {}'.format(spec_filename)
+            'Could not find a Lure spec file {!r}'.format(spec_filename)
         )
 
 

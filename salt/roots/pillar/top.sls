@@ -2,3 +2,4 @@ base:
   '*':
     - pythons
     - jig
+    - lure
